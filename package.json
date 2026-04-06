@@ -1,0 +1,20 @@
+{
+  "name": "sunset-calendar",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": " node ./node_modules/electron/cli.js .",
+    "build": "node ./node_modules/electron-builder/out/cli/cli.js"
+  },
+  "devDependencies": {
+    "electron": "^41.1.1",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "com.sunset.snippets",
+    "productName": "Sunset Snippets",
+    "win": {
+      "target": "nsis"    
+    }
+  }
+}
